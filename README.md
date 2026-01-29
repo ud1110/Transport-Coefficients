@@ -1,0 +1,2 @@
+This repo has codes to find the transport coefficients/Onsager Matrix using the GK-LRT approach and spectral techniques. The supporting files have not been uploaded, so if the codes are to be used, the names of the files used must be modified.
+For Conductivity_Spectral and ConductivityClass, the code is a slight modification of the work by KD Fong. Follow this for her code: https://github.com/kdfong/transport-coefficients
