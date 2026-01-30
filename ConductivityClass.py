@@ -68,7 +68,7 @@ class Conductivity:
         Find the correlation function (first in the frequency domain (periodogram), and then transform it to the time domain, and then divide by n)
         fft: Computes the FFT, with X=fft(x, n); X_k=sum over j (x_j exp(-i*2pi/n * k*j))
         ifft: Computes the inverse FFT, with x=ifft(X); x_k=1/n sum over j (x_j exp(i*2pi/n *j*k))
-        Cross Correlation Theorem: FT(sum over tau(x(t+tau)*y(t+tau)))=FT(x(t))*(FT(y(t)).conjugate())
+        Cross Correlation Theorem: FT(sum over tau(x(t+tau)*y(t)))=FT(x(t))*(FT(y(t)).conjugate())
         Padding is done to avoid circular correlations (which lead to negative lags), and FFT leads to circularity if padding isn't done properly
         fft is fastest when we have 2^integer number of elements in the array
         """
